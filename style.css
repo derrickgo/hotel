@@ -14,11 +14,9 @@ h1 {
     left:120px;
     top:0;
     line-height: 80px;
-    /* background-image:url(images/logo.svg) ; */
     background-repeat: no-repeat;
     background-position: center;
     width:210px;
-    /* text-indent: -9999px;  */
 }
 header ul {
     position:absolute;
@@ -107,26 +105,26 @@ header a:hover {
     text-align: center;
     line-height: 2em;
 }
-.product {
+.area {
     display:flex;
     background-color: #F5F5F3;
     justify-content: space-between;
     align-items: center;
     padding: 100px 180px 80px;
 }
-.product div {
+.area div {
     width:300px;
     text-align:center;
 }
-.product img {
+.area img {
     width:100%;
     border-radius: 10px;;
 }
-.product h3 {
+.area h3 {
     font-size: 20px;    
     margin: 20px 0;
 }
-.product p {
+.area p {
     font-size:14px;
     line-height: 1.6em;
 }
@@ -273,11 +271,11 @@ header h1 {
 .info h2 {
     font-size:30px;
 }
-.product {
+.area {
     flex-direction: column;
     padding: 60px 0;
 }
-.product div {
+.area div {
     margin-bottom: 30px;
 }
 }
