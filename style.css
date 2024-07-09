@@ -14,8 +14,6 @@ h1 {
     left:120px;
     top:0;
     line-height: 80px;
-    background-repeat: no-repeat;
-    background-position: center;
     width:210px;
 }
 header ul {
@@ -40,7 +38,7 @@ header a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 10vh; /* Adjust based on your needs */
+    height: 10vh;
     background-color: #f4f4f4;
 }
 
