@@ -126,32 +126,7 @@ header a:hover {
     font-size:14px;
     line-height: 1.6em;
 }
-.newsletter {
-    background-color:#3C3C4B;
-    color:white;
-    padding:60px 0;
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-}
-.newsletter p {
-    margin-bottom: 20px;
-}
-.newsletter input, .newsletter button {
-    background-color: transparent;
-    color:white;
-    border: 1px solid #949d9a; 
-    padding: 10px; 
-    border-radius: 5px;;
-}
-.newsletter input {
-    width:200px;
-    margin-right: 15px;;
-}
-.newsletter button {
-    width:80px;
-    cursor:pointer;
-}
+
 input::placeholder {
     color:#DDDDDD;
 }
@@ -172,7 +147,6 @@ footer {
     display:none;
 }
 
-/* */
 
 .dropdown-container {
     display: flex;
@@ -220,6 +194,66 @@ footer {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+}
+
+.contact {
+    padding: 60px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #3C3C4B; /* 可根據需求修改背景色 */
+}
+
+.contact h2 {
+    color: white;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #3C3C4B;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    max-width: 600px;
+}
+
+.contact input, .contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.contact button {
+    padding: 10px 20px;
+    background-color: transparent; /* 背景透明 */
+    color: white;
+    border: 2px solid white; /* 白色邊框 */
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.contact button:hover {
+    background-color: #2C2C3B; /* 比原本的背景顏色稍微加深 */
+    color: white;
+    border: 2px solid white;
+}
+
+.contact input:focus, .contact textarea:focus {
+    outline: none;
+    border-color: #E0E9A3; /* 焦點時的邊框色 */
 }
 
 /* Media query for smaller screens */
