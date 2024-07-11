@@ -44,14 +44,6 @@ header a:hover {
     text-decoration: underline;
 }
 
-.checkin {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 10vh;
-    background-color: #f4f4f4;
-}
-
 .banner {
     color: white;
     height: 95vh;
