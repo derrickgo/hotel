@@ -1,35 +1,45 @@
 * {
-    padding:0;
-    margin:0;
+    padding: 0;
+    margin: 0;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
 header {
-    background-color:rgba(60,60,75,0.8);
-    height:80px;
-    width:100%;
-    position:fixed;    
+    background-color: rgba(60, 60, 75, 0.8);
+    height: 80px;
+    width: 100%;
+    position: fixed;
 }
+
 h1 {
-    color:white;
-    position:absolute;
-    left:120px;
-    top:0;
+    color: white;
+    position: absolute;
+    left: 120px;
+    top: 0;
     line-height: 80px;
-    width:210px;
+    width: 210px;
 }
+
 header ul {
-    position:absolute;
-    right:5vw;
-    top:0;
-    line-height:80px;
+    position: absolute;
+    right: 5vw;
+    top: 0;
+    line-height: 80px;
 }
+
 header li {
-    display:inline;
-    margin-right:4vw;    
+    display: inline;
+    margin-right: 4vw;
 }
+
 header a {
-    color:white;
+    color: white;
     text-decoration: none;
 }
+
 header a:hover {
     text-decoration: underline;
 }
@@ -43,110 +53,101 @@ header a:hover {
 }
 
 .banner {
-    /* background-color: red; */
-    color:white;
-    height:95vh;
+    color: white;
+    height: 95vh;
     background-image: url("images/banner.png");
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size: cover;
     background-position: center;
-    display:flex;
-    flex-direction:column;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-} 
-.banner h2 {
-    font-size:60px;
-    margin-top:60px;
-} 
-.banner p {
-    color:#FEF7E6;
-    font-size:18px;
-    margin:25px 0;
 }
+
+.banner h2 {
+    font-size: 60px;
+    margin-top: 60px;
+}
+
+.banner p {
+    color: #FEF7E6;
+    font-size: 18px;
+    margin: 25px 0;
+}
+
 .banner a {
-    color:white;
+    color: white;
     text-decoration: none;
     border: 1px solid #ACACAC;
-    padding:10px 20px;
+    padding: 10px 20px;
     border-radius: 5px;
 }
-.slogan {
-    background-color:#485652;
-    color:white;
-    height:250px;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 20px;
-    line-height: 1.8em;  
-}
+
 .news {
-    display:flex;
+    display: flex;
 }
+
 .news img {
-    width:50%;
+    width: 50%;
 }
+
 .info {
-    width:50%;
+    width: 50%;
     background-color: white;
-    display:flex;
-    flex-direction:column;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
+
 .info h2 {
-    font-size:40px;
+    font-size: 40px;
     margin-bottom: 30px;
 }
+
 .info p {
     text-align: center;
     line-height: 2em;
 }
+
+/* step1 */
 .area {
-    display:flex;
+    display: flex;
     background-color: #F5F5F3;
     justify-content: space-between;
     align-items: center;
     padding: 100px 180px 80px;
 }
+
 .area div {
-    width:300px;
-    text-align:center;
+    width: 300px;
+    text-align: center;
 }
+
 .area img {
-    width:100%;
-    border-radius: 10px;;
+    width: 100%;
+    border-radius: 10px;
 }
+
 .area h3 {
-    font-size: 20px;    
+    font-size: 20px;
     margin: 20px 0;
 }
+
 .area p {
-    font-size:14px;
+    font-size: 14px;
     line-height: 1.6em;
 }
 
 input::placeholder {
-    color:#DDDDDD;
-}
-input:focus {
-    outline: none; 
-    border-color:#E0E9A3; 
-}
-footer {
-    background-color:#393632;
-    color:#B7B7B7;
-    height:60px;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 14px;
-}
-.menu {
-    display:none;
+    color: #DDDDDD;
 }
 
+input:focus {
+    outline: none;
+    border-color: #E0E9A3;
+}
 
 .dropdown-container {
     display: flex;
@@ -161,11 +162,11 @@ footer {
     left: 50%;
     transform: translateX(-50%);
     bottom: 175px;
-    width: 80%; /* Adjust as needed */
+    width: 80%;
     max-width: 1200px;
 }
 
-/* Styling for the dropdowns */
+
 .dropdown {
     position: relative;
     display: inline-block;
@@ -183,10 +184,10 @@ footer {
 }
 
 .dropdown input {
-    flex-grow: 2; /* Make date input wider */
+    flex-grow: 2;
 }
 
-/* Styling for the search button */
+
 .search-button {
     padding: 10px 20px;
     background-color: #3C3C4B;
@@ -201,7 +202,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #3C3C4B; /* 可根據需求修改背景色 */
+    background-color: #3C3C4B;
 }
 
 .contact h2 {
@@ -225,7 +226,8 @@ footer {
     max-width: 600px;
 }
 
-.contact input, .contact textarea {
+.contact input,
+.contact textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
@@ -237,77 +239,136 @@ footer {
 
 .contact button {
     padding: 10px 20px;
-    background-color: transparent; /* 背景透明 */
+    background-color: transparent;
+    /* 背景透明 */
     color: white;
-    border: 2px solid white; /* 白色邊框 */
+    border: 2px solid white;
+    /* 白色邊框 */
     border-radius: 4px;
     cursor: pointer;
     font-size: 16px;
 }
 
 .contact button:hover {
-    background-color: #2C2C3B; /* 比原本的背景顏色稍微加深 */
+    background-color: #2C2C3B;
     color: white;
     border: 2px solid white;
 }
 
-.contact input:focus, .contact textarea:focus {
+.contact input:focus,
+.contact textarea:focus {
     outline: none;
-    border-color: #E0E9A3; /* 焦點時的邊框色 */
+    border-color: #E0E9A3;
 }
 
-/* Media query for smaller screens */
-@media (max-width: 768px) {
-    .dropdown-container {
-        flex-direction: column;
-        gap: 10px;
-        
-        width: 90%; /* Adjust as needed */
-    }
+.pricing {
+    padding: 60px 0;
+    background-color: #F5F5F3;
+    text-align: center;
 }
-/* */
+
+.pricing h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #3C3C4B;
+}
+
+.pricing table {
+    width: 90%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.pricing th,
+.pricing td {
+    padding: 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+    font-size: 16px;
+}
+
+.pricing th {
+    background-color: #3C3C4B;
+    color: white;
+}
+
+footer {
+    background-color: #393632;
+    color: #B7B7B7;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+
+.menu {
+    display: none;
+}
+
+
+
 
 /* 響應式設計語法 */
 @media screen and (max-width: 768px) {
-header ul {
-    display:none;
-}
-header h1 {
-    left:50%;
-    transform: translateX(-50%);
-}
-.banner h2 {
-    font-size:40px;
-}
-.menu {
-    display:block;
-    background-color: transparent;
-    color:white;
-    font-size: 35px;
-    position:absolute;
-    top:15px;
-    left:20px;
-    border:none;
-    cursor: pointer;
-}
-.news {
-    flex-direction: column;
-}
-.news img {
-    width:100%;
-}
-.info {
-    width:100%;
-    padding:40px 0;
-}
-.info h2 {
-    font-size:30px;
-}
-.area {
-    flex-direction: column;
-    padding: 60px 0;
-}
-.area div {
-    margin-bottom: 30px;
-}
+    header ul {
+        display: none;
+    }
+
+    header h1 {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .banner h2 {
+        font-size: 40px;
+    }
+
+    .menu {
+        display: block;
+        background-color: transparent;
+        color: white;
+        font-size: 35px;
+        position: absolute;
+        top: 15px;
+        left: 20px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .news {
+        flex-direction: column;
+    }
+
+    .news img {
+        width: 100%;
+    }
+
+    .info {
+        width: 100%;
+        padding: 40px 0;
+    }
+
+    .info h2 {
+        font-size: 30px;
+    }
+
+    .area {
+        flex-direction: column;
+        padding: 60px 0;
+    }
+
+    .area div {
+        margin-bottom: 30px;
+    }
+
+    .dropdown-container {
+        flex-direction: column;
+        gap: 10px;
+        width: 90%;
+    }
 }

@@ -14,22 +14,22 @@
         <h1>聯成商旅</h1>
         <nav>
             <ul>
-                <li><a href="#">最新情報</a></li>
-                <li><a href="#">個館介紹</a></li>
-                <li><a href="#">關於我們</a></li>
-                <li><a href="#">會員專區</a></li>
+                <li><a href="#banner">最新情報</a></li>
+                <li><a href="#area">個館介紹</a></li>
+                <li><a href="#pricing">房型價目表</a></li>
+                <li><a href="#contact-us">聯絡我們</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="banner">
+        <section class="banner" id="banner">
             <h2>休假的好去處</h2>
             <p>來一場心曠神怡的旅遊</p>
             <p><a href="https://www.google.com">瞭解更多</a></p>
             <div class="dropdown-container">
                 <div class="dropdown">
                     <select>
-                        <option value="0">選擇館別</option>
+                        <option value="0">選擇館別1</option>
                         <option value="1">台北八德館</option>
                         <option value="2">台北信義館</option>
                         <option value="3">台中站前館</option>
@@ -52,7 +52,7 @@
                 <button class="search-button">搜尋</button>
             </div>
         </section>
-        <section class="area">
+        <section class="area" id="area">
             <div>
                 <img src="images/hotel1.png" alt="台北八德館">
                 <h3>台北八德館</h3>
@@ -69,7 +69,7 @@
                 <p>台中站前館座落於火車站附近，為旅客提供無與倫比的便利性。無論是探索台中的文化景點還是進行商務活動，自由館都能滿足您的需求。舒適的住宿環境與周邊的豐富資源，讓您的旅程更加愉快和便捷。</p>
             </div>
         </section>
-        <section class="news">
+        <section class="news" id="news">
             <img src="images/hotel2.png" alt="新竹光復館">
             <div class="info">
                 <h2>5月1日新竹光復館隆重開張！</h2>
@@ -77,9 +77,59 @@
                     即日起來店消費在IG打卡，下一次享受85折訂房優惠！</p>
             </div>
         </section>
-        <section class="contact">
+        <section class="pricing" id="pricing">
+            <h2>房型價目表</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>房型</th>
+                        <th>定價</th>
+                        <th>平日</th>
+                        <th>假日</th>
+                        <th>床型</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>標準套房</td>
+                        <td>8,000</td>
+                        <td>5,200</td>
+                        <td>6,800</td>
+                        <td>(一大床/兩單床)</td>
+                    </tr>
+                    <tr>
+                        <td>豪華套房</td>
+                        <td>8,800</td>
+                        <td>5,720</td>
+                        <td>7,480</td>
+                        <td>(一大床/兩單床)</td>
+                    </tr>
+                    <tr>
+                        <td>標準湯房</td>
+                        <td>9,600</td>
+                        <td>6,240</td>
+                        <td>8,160</td>
+                        <td>(一大床/兩單床)</td>
+                    </tr>
+                    <tr>
+                        <td>洋式四人房</td>
+                        <td rowspan="2">11,000</td>
+                        <td>7,125</td>
+                        <td>9,350</td>
+                        <td>(兩大床/四單床)</td>
+                    </tr>
+                    <tr>
+                        <td>和式四人房</td>
+                        <td>7,800</td>
+                        <td>10,200</td>
+                        <td>(和式軟墊)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="contact" id="contact-us">
             <h2>聯絡我們</h2>
-            <p>準備好開始你的下一個項目了嗎？發送消息給我們，我們會儘快回覆您！</p>
+            <p style="color: white;">遇到任何問題嗎?發送消息給我們，我們會儘快回覆您！</p>
             <form>
                 <input type="text" name="full_name" placeholder="全名" required>
                 <input type="email" name="email" placeholder="電子郵件地址" required>
@@ -92,6 +142,21 @@
     <footer>
         <p>Copyright © 2024 聯成商旅 All Rights Reserved.</p>
     </footer>
+    <script>
+        document.querySelectorAll('a.nav-link').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+
+                window.scrollTo({
+                    top: targetElement.offsetTop,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 
 </html>
